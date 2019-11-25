@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>tarjetas_flexbox</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html {
+			min-height: 100%;
+		}
+
+		@media (max-width:600px){
+			.container {
+				flex-direction: column;
+			}
+		}
+		img {
+			width: 100%;
+			border-radius: 10px 10px 0 0;
+		}
+
+		body {
+			font-family: 'Roboto Mono', monospace;
+			font-size: 18px;
+			background: linear-gradient(38deg, white, whitesmoke)
+		}
+
+		.container {
+			display:flex;
+/*			flex-direction: row;*/
+			padding: 2em 4em;
+			justify-content: center;
+		}
+		.disenador {
+			display: flex;
+			flex-direction: column;
+			width: 20em;
+			margin: 1em;
+			background: rgba(240, 240, 240, 0.9);
+			border-radius: 10px;
+			box-shadow: 0px 0px 30px grey;
+		}
+		header{
+			display: flex;
+			padding: 1em 0em;
+			margin: 1em 2em;
+			justify-content: space-between;
+			align-items: baseline;
+			border-bottom: 2px solid black;
+		}
+		p{
+			padding: 0 2em 1em 2em;
+			flex-grow: 1;
+			font-size: 17px;
+		}
+		span{
+			font-style: italic;
+			font-size: 0.8em;
+		}
+		footer{
+			box-shadow: 0px 0px 40px black;
+			padding: 2em 0em 2em 2em;
+			font-size: 17px;
+			color: white;
+			background-color: black;
+			border-radius: 0 0 10px 10px
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="disenador">
+			<div class="disenador_img">
+				<img src="img/Paula_Scher_face.jpg" alt="Paula Scher">
+			</div>
+			<header>
+				<h3>Paula Scher</h3>
+				<span>1948</span>
+			</header>
+			<p class="disenador_contenido">
+				Mollis mattis potenti id sollicitudin fusce magna accumsan ac conubia mauris convallis, metus nec neque justo nullam sagittis lectus lacus volutpat. Quidem deleniti quae nihil aperiam repellat dignissimos sequi debitis molestiae molestiae.
+			</p>
+			<footer class="disenador_pie">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</footer>
+		</div>
+		<div class="disenador">
+			<div class="disenador_img">
+				<img src="img/Tinker_Hatfield_face.jpg" alt="Tinker Hatfield">
+			</div>
+			<header>
+				<h3>Tinker Hatfield</h3>
+				<span>1952</span>
+			</header>
+			<p class="disenador_contenido">			
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ducimus, repellat facilis ratione, labore quae asperiores porro laudantium voluptas fugit. Nemo nesciunt nobis commodi nostrum quidem aliquam vitae beatae. Ipsam!
+			</p>
+			<footer class="disenador_peu">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</footer>
+		</div>
+	</div>
+</body></html>
